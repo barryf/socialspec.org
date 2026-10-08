@@ -1,0 +1,32 @@
+---
+layout: blog
+visibility: unlisted
+created_at: 2026-10-13T08:00:00-07:00
+title: News
+description: Draft updates, implementation notes, and RFC summaries.
+feeds:
+  news:
+    source: news
+news:
+  feed_href: /feeds/main.xml
+  feed_label: Feed
+  feed_url: https://socialspec.org/feeds/main.xml
+  follow_title: Follow the news
+  follow_description: Draft updates and RFC summaries, in the feed reader you already use. No newsletter, no account.
+  subscribe_label: Subscribe via RSS
+  filters:
+    - label: All
+      tag: all
+      href: /news/
+      active: true
+      color: none
+    - label: Announcements
+      tag: announcement
+      href: /tags/announcement/
+      active: false
+      color: none
+    # - label: Apps
+    #   tag: apps
+    #   href: /tags/apps/
+    #   active: false
+    #   color: none

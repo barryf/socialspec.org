@@ -1,0 +1,203 @@
+---
+created_at: 2026-10-13T07:00:00-07:00
+updated_at: 2026-10-13T07:00:00-07:00
+layout: home
+visibility: unlisted
+title: SocialSpec
+description: |
+  APIs for social engagement on the world wide web.
+  Built on open standards.
+feeds:
+  news:
+    source: news
+
+eyebrow:
+  label: Request For Comments
+  href: https://github.com/socialspec/socialspec.org/issues/1
+
+hero:
+  title: The future of social media is websites. Join the network.
+  description: |
+    Escape the algorithm and join the social network that _creates_ connections instead of harvesting them: **the world wide web** (of websites).
+
+profile:
+  active_spec: socialspec
+  name: Jordan Doe
+  handle: "@jordandoe.com"
+  summary: Eager explorer, eternal optimist, passionate about taking the long way home.
+  avatar: "💁🏻‍♀️"
+  dm: "hello@jordandoe.com"
+  default_tab: following
+  files:
+    - id: posts
+      label: Start with an RSS, Atom, or JSON feed
+      path: /feed.xml or /feed.json
+      color: navy
+    - id: following
+      label: followspec.org
+      word: follow
+      suffix: spec.org
+      path: /.well-known/following.opml
+      color: purple
+    - id: about
+      label: aboutspec.org
+      word: about
+      suffix: spec.org
+      path: /.well-known/about.md
+      color: yellow
+    - id: contact
+      label: contactspec.org
+      word: contact
+      suffix: spec.org
+      path: /.well-known/contact.vcf
+      color: green
+  tabs:
+    - id: posts
+      label: Posts
+    - id: following
+      label: Following
+    - id: about
+      label: About
+    - id: contact
+      label: Contact
+  posts:
+    - date: Sep 30, 2026
+      title: I published my following list
+      blurb: Three feeds I think everyone should read.
+    - date: Sep 12, 2026
+      title: First tomatoes of the year
+      blurb: Late, small, and absolutely worth it.
+    - date: Aug 28, 2026
+      title: Small software, on purpose
+      blurb: Notes from a year of building less.
+  following:
+    - name: Anil Dash
+      host: anildash.com
+      following: true
+      favicon_url: https://www.anildash.com/favicon.svg
+    - name: Caleb Hailey
+      host: calebhailey.com
+      following: false
+      favicon_url: https://calebhailey.com/favicon.jpeg
+    - name: Daring Fireball
+      host: daringfireball.net
+      following: true
+      favicon_url: https://daringfireball.net/graphics/apple-touch-icon.png
+    - name: Eater
+      host: eater.com
+      following: false
+      favicon_url: https://www.eater.com/static-assets/icons/apple-touch-icon.png
+    - name: HyperTexting
+      host: hypertexting.com
+      following: false
+      favicon_url: https://hypertexting.com/img/apple-touch-icon.png
+    - name: Kottke
+      host: kottke.org
+      following: true
+      favicon_url: https://kottke.org/images/2024/icons/256x256.png
+    - name: Molly White
+      host: mollywhite.net
+      following: true
+      favicon_url: https://www.mollywhite.net/assets/images/icons/apple-touch-icon.png
+    - name: New York Times
+      host: nytimes.com
+      following: false
+      favicon_url: https://static01.nyt.com/vi-assets/static-assets/assets/apple-touch-icon-BTg5GMmB.png
+    - name: Platformer
+      host: platformer.news
+      following: true
+      favicon_url: https://storage.ghost.io/c/a0/4c/a04c7225-d919-4d78-9b7c-a3fdd071349b/content/images/size/w256h256/2024/05/Logomark_Blue_800px.png
+    - name: Dave Winer
+      host: scripting.com
+      following: true
+      favicon_url: http://scripting.com/favicon.ico
+    - name: Spyglass
+      host: spyglass.org
+      following: false
+      favicon_url: https://storage.ghost.io/c/af/ca/afcaa655-46e2-45b8-889a-2881de5cce69/content/images/2026/07/Spyglass-Rings-----Multi.png
+    - name: The Verge
+      host: theverge.com
+      following: false
+      favicon_url: https://www.theverge.com/static-assets/icons/apple-touch-icon.png
+    - name: This American Life
+      host: thisamericanlife.org
+      following: true
+      # favicon_url: https://www.thisamericanlife.org/sites/all/themes/thislife/favicons/apple-touch-icon.png?v=2
+  about: |
+    ---
+    summary: Eager explorer, eternal optimist, passionate about taking the long way home.
+    ---
+
+    ### About Jordan
+
+    I’m an outdoor enthusiast with a gift for turning an ordinary walk into an adventure. I get excited about taking [the long way home](#the-long-way). 
+    
+    ![Out on the trail](/img/i-love-hiking.png)
+    
+    JordanDoe.com is my digital garden, where I share the [places](#places), [ideas](#ideas), and [little discoveries](#links) that keep me moving. It’s my corner of the internet—a positive space to stay open to what’s ahead and remember that every path, however familiar, has something new to offer.
+
+    The best way to reach me is [hi@jordandoe.com](mailto:hi@jordandoe.com).
+  contact:
+    - kind: Name
+      value: Jordan Doe
+    - kind: Email · preferred
+      value: "hello@jordandoe.com"
+      href: "mailto:hello@jordandoe.com"
+      action: Email
+    - kind: Website
+      value: jordandoe.com
+      href: "https://jordandoe.com"
+      action: Open link
+
+audiences:
+  - id: publishers
+    title: For publishers
+    lead: From personal websites to CMS platforms
+    description: |
+      Increase engagement and grow your audience by making the **information you already share** more accessible.
+  - id: subscribers
+    title: For subscribers
+    lead: From RSS feed readers to next-gen social experiences
+    description: |
+      Turn any followed website into a full social profile with three `HTTP GET` requests.
+      **No HTML scraping required.**
+
+platform:
+  eyebrow: v1 Drafts
+  title: Meet the APIs.
+  description: |
+    SocialSpec APIs share a common principle: **single purpose**, **single file**, and **single request**.
+
+apis:
+  - key: follow
+    name: followspec.org
+    path: /.well-known/following.opml
+    color: purple
+    status: v1 Draft
+    description: The open web's hidden social graph.
+    href: https://followspec.org
+
+  - key: about
+    name: aboutspec.org
+    path: /.well-known/about.md
+    color: yellow
+    status: v1 Draft
+    description: Unlimited links in bio.
+    href: https://aboutspec.org
+
+  - key: contact
+    name: contactspec.org
+    path: /.well-known/contact.vcf
+    color: green
+    status: v1 Draft
+    description: You've got mail.
+    href: https://contactspec.org
+
+news:
+  title: Latest news
+  description: |
+    Follow SocialSpec News to stay up-to-date on the latest updates.
+  feed_href: /feeds/main.xml
+  feed_label: Subscribe via RSS
+  index_href: /news/
+  index_label: All news →

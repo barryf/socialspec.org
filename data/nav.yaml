@@ -1,0 +1,56 @@
+main:
+  - label: APIs
+    href: "/#apis"
+  - label: News
+    href: /news
+  - label: GitHub
+    href: https://github.com/socialspec
+    icon: github
+    cta: true
+
+mobile:
+  - label: APIs
+    href: "/#specs"
+  - label: News
+    href: /news
+  - label: GitHub
+    href: https://github.com/socialspec
+    icon: github
+    cta: true
+
+footer:
+  title:
+    href: "/"
+  description: |
+    APIs for social engagement on the world wide web. Built on open standards.
+  groups:
+    - label: APIs
+      markers: false
+      links:
+        - label: followspec.org
+          href: https://followspec.org
+          color: purple
+        - label: aboutspec.org
+          href: https://aboutspec.org
+          color: yellow
+        - label: contactspec.org
+          href: https://contactspec.org
+          color: green
+    - label: Resources
+      markers: false
+      links:
+        - label: Home
+          href: https://socialspec.org/
+          color: none
+        - label: News
+          href: https://socialspec.org/news
+          color: none
+        - label: Contact
+          href: https://socialspec.org/.well-known/contact.vcf
+        - label: info@socialspec.org
+          href: mailto:info@socialspec.org
+          color: none
+  meta:
+    message: SocialSpec.org &copy; 2026
+    generator: 'Made with \@hypertexting.dev'
+    href: https://hypertexting.dev

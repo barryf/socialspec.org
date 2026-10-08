@@ -1,0 +1,71 @@
+---
+base_url: https://socialspec.org
+title: SocialSpec
+description: |
+    APIs for social engagement on the world wide web. Built on open standards.
+brand: socialspec
+cover: /img/socialspec-following-cover.png
+
+byline:
+    name: SocialSpec
+    username: '@socialspec.org'
+    favicon: /img/socialspec.png
+    email: contact@socialspec.org
+    href: /
+
+links:
+  - rel: icon
+    href: /img/socialspec.png?v=1
+    type: image/png
+    sizes: 512x512
+  - rel: me
+    href: https://github.com/socialspec
+  - rel: me
+    href: https://github.com/socialspec/socialspec.org
+  - rel: following
+    href: /.well-known/following.opml
+
+feeds:
+    main:
+        metadata:
+            title: "SocialSpec.org"
+    news:
+        metadata:
+            title: "SocialSpec.org News"
+        include:
+            - path: /news/**
+        sort:
+            - created_at: desc
+
+config:
+    preview:
+        id: socialspec-local
+        bind: localhost
+        port: 4173
+    themes_dir: themes
+    theme: themes/socialspec/theme.json
+    feed_format: rss
+    tag_layout: tag
+    status_layout: builtin/status.html
+    status_redirect: /
+    tidy_mode: true
+
+providers:
+    default:
+        kind: s3
+        endpoint: https://5a8b6c901ff20ee02892cf121b1ead54.r2.cloudflarestorage.com
+        base_url: https://socialspec.org
+        config:
+            bucket: socialspec-production
+            conditional_mode: etag
+        secrets:
+          - name: access_key_id
+            key: AWS_ACCESS_KEY_ID
+          - name: secret_access_key
+            key: AWS_SECRET_ACCESS_KEY
+
+environments:
+    default: [default]
+
+sync:
+    remote: https://socialspec.org

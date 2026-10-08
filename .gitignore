@@ -1,0 +1,8 @@
+.agent/
+builds/
+deployments/
+design/
+output/playwright/
+.playwright-cli/
+.DS_Store
+htfmt
